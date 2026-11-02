@@ -1,0 +1,150 @@
+//All rights reserved.
+//File Title: Physical Constraints file
+//Tool Version: V1.9.12 (64-bit)
+//Part Number: GW2AR-LV18QN88C8/I7
+//Device: GW2AR-18
+//Device Version: C
+//Created Time: Thu 10 08 22:36:07 2026
+
+//---- RGB LCD (480x272): 与板载 40P 排针硬连, 不能改 ----
+IO_LOC "lcd_b[4]" 27;
+IO_PORT "lcd_b[4]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=24 BANK_VCCIO=3.3;
+IO_LOC "lcd_b[3]" 28;
+IO_PORT "lcd_b[3]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=24 BANK_VCCIO=3.3;
+IO_LOC "lcd_b[2]" 29;
+IO_PORT "lcd_b[2]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=24 BANK_VCCIO=3.3;
+IO_LOC "lcd_b[1]" 30;
+IO_PORT "lcd_b[1]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=24 BANK_VCCIO=3.3;
+IO_LOC "lcd_b[0]" 31;
+IO_PORT "lcd_b[0]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=24 BANK_VCCIO=3.3;
+IO_LOC "lcd_g[5]" 32;
+IO_PORT "lcd_g[5]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=24 BANK_VCCIO=3.3;
+IO_LOC "lcd_g[4]" 33;
+IO_PORT "lcd_g[4]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=24 BANK_VCCIO=3.3;
+IO_LOC "lcd_g[3]" 34;
+IO_PORT "lcd_g[3]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=24 BANK_VCCIO=3.3;
+IO_LOC "lcd_g[2]" 35;
+IO_PORT "lcd_g[2]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=24 BANK_VCCIO=3.3;
+IO_LOC "lcd_g[1]" 36;
+IO_PORT "lcd_g[1]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=24 BANK_VCCIO=3.3;
+IO_LOC "lcd_g[0]" 37;
+IO_PORT "lcd_g[0]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=24 BANK_VCCIO=3.3;
+IO_LOC "lcd_r[4]" 38;
+IO_PORT "lcd_r[4]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=24 BANK_VCCIO=3.3;
+IO_LOC "lcd_r[3]" 39;
+IO_PORT "lcd_r[3]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=24 BANK_VCCIO=3.3;
+IO_LOC "lcd_r[2]" 40;
+IO_PORT "lcd_r[2]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=24 BANK_VCCIO=3.3;
+IO_LOC "lcd_r[1]" 41;
+IO_PORT "lcd_r[1]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=24 BANK_VCCIO=3.3;
+IO_LOC "lcd_r[0]" 42;
+IO_PORT "lcd_r[0]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=24 BANK_VCCIO=3.3;
+IO_LOC "lcd_de" 48;
+IO_PORT "lcd_de" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "lcd_vs" 26;
+IO_PORT "lcd_vs" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "lcd_hs" 25;
+IO_PORT "lcd_hs" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "lcd_dclk" 77;
+IO_PORT "lcd_dclk" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+//     69/70 是**板子为 UART 专门留的通道**, 依据来自 Sipeed 官方 wiki:
+//       "Onboard BL616 is used for downloading bitstream into FPGA, and it's
+//        also used as USB to serial convertor to communicate FPGA with computer
+//        via UART."   /  "USB to UART for FPGA"
+//     而且本仓库的官方例程 D:\...\TangNano-20K-example-main\uart\src\top.cst
+//     用的就是:
+//         IO_LOC "uart_rx" 70;
+//         IO_LOC "uart_tx" 69;
+//     它的时钟参数也是 CLK_FRE=27 / BAUD=115200, 与本工程完全一致。
+IO_LOC "uart_rx" 70;
+IO_PORT "uart_rx" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_LOC "uart_tx" 69;
+IO_PORT "uart_tx" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+//---- 15~20 六只 LED 脚全部停用 (指示灯功能已由 60 颗 WS2812 灯带承担) ----
+
+//---- 板载功放 MAX98357A 的 I2S: 焊在板上, 不能改 ----
+IO_LOC "PA_EN" 51;
+IO_PORT "PA_EN" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "HP_DIN" 54;
+IO_PORT "HP_DIN" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "HP_WS" 55;
+IO_PORT "HP_WS" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "HP_BCK" 56;
+IO_PORT "HP_BCK" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+//---- 板载按键 s1 / s2 (88 / 87, MODE0 / MODE1) ----
+IO_LOC "s2" 87;
+IO_PORT "s2" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_LOC "s1" 88;
+IO_PORT "s1" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+
+//     板载那颗 WS2812 的 R52(5.1k 下拉) / R60(100Ω) 已经拆掉,
+IO_LOC "ws2812_dout" 80;
+IO_PORT "ws2812_dout" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+//      它们能接什么、不能接什么:
+//        可以用: 开漏总线 (I2C)、推挽输出、RC 计时 (光敏那种)
+//        不能用: 光弦这种"高阻输入 + 靠压差判决"的 —— 空闲被 Flash 顶高
+//                就等于"一直按着"
+//      要恢复光敏, 52/53 是候选 (RC 计时能容忍 Flash 上拉); 但先用万用表确认:
+//      在 52 脚对 GND 并一只 10k, 上电量电压, 能掉到 0.5V 以下才说明驱动得动。
+
+//   引脚 85 = SCL, 86 = SDA。
+IO_LOC "i2c_scl" 85;
+IO_PORT "i2c_scl" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+IO_LOC "i2c_sda" 86;
+IO_PORT "i2c_sda" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+//   路   | 音   | 引脚 | 复用功能 | 上下拉 | "发声"电平
+//   -----|------|------|----------|--------|------------
+//   key0 | do   |  71  |    -     | NONE   | 高 (遮挡光路)
+//   key1 | re   |  72  |    -     | NONE   | 高 (遮挡光路)
+//   key2 | mi   |  73  |    -     | NONE   | 高 (遮挡光路)
+//   key3 | fa   |  74  |    -     | NONE   | 高 (遮挡光路)
+//   key4 | sol  |  75  |    -     | NONE   | 高 (遮挡光路)
+//   key5 | la   |  76  | GCLKC_1  | NONE   | 高 (遮挡光路)
+//   key6 | si   |  79  | GCLKC_0  | NONE   | 高 (遮挡光路)
+
+//      光弦接收管是高阻源 (靠几 µA ~ 几百 µA 的光电流拉动节点)。
+//      FPGA 的内上拉约 50k, 一旦打开就会和光路抢节点, 把"不遮挡"顶到
+//      3.0V 附近 = 永远读高, 整条光路失效, 而且现象和"线接错了"一模一样。
+IO_LOC "key[6]" 79;
+IO_PORT "key[6]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "key[5]" 76;
+IO_PORT "key[5]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "key[4]" 75;
+IO_PORT "key[4]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "key[3]" 74;
+IO_PORT "key[3]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "key[2]" 73;
+IO_PORT "key[2]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "key[1]" 72;
+IO_PORT "key[1]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "key[0]" 71;
+IO_PORT "key[0]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+
+//     15/16/17 已经给了编码器 (并且为了当输入用, 那三颗限流电阻已拆)。
+IO_LOC "key[7]" 18;
+IO_PORT "key[7]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "key[8]" 19;
+IO_PORT "key[8]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "key[9]" 20;
+IO_PORT "key[9]" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+
+//---- 主时钟 27MHz 晶振 (4) ----
+IO_LOC "clk" 4;
+IO_PORT "clk" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+
+//   ws2812_dout (原 79): 引脚让给光弦 key[4]。WS2812 灯带可视化停用。
+//   sensor_light(原 85): 引脚让给光弦 key[5]。光敏测光(颤音深度)停用。
+
+//  (leds[0]=15 leds[1]=16 leds[2]=17), 而本工程从来没用过它们。
+//  当作普通 IO 用完全没问题。
+IO_LOC "enc_a" 15;
+IO_PORT "enc_a" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "enc_b" 16;
+IO_PORT "enc_b" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;
+IO_LOC "enc_sw" 17;
+IO_PORT "enc_sw" IO_TYPE=LVCMOS33 PULL_MODE=NONE BANK_VCCIO=3.3;

@@ -1,0 +1,22 @@
+# 默认按文本自动检测
+* text=auto
+
+# 二进制文件：绝不能让 Git 转换换行，否则文件会被破坏
+*.fs     binary
+*.bin    binary
+*.binx   binary
+*.jpg    binary
+*.jpeg   binary
+*.png    binary
+*.pdf    binary
+*.mi     -text
+*.ipc    -text
+
+# 源码与脚本：统一换行
+*.v      text eol=lf
+*.vh     text eol=lf
+*.cst    text eol=lf
+*.tcl    text eol=lf
+*.md     text eol=lf
+*.json   text eol=lf
+*.ps1    text eol=crlf

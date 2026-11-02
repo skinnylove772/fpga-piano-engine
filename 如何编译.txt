@@ -1,0 +1,56 @@
+﻿【如何编译 / 如何烧录】
+
+一、路径要求（重要，先看这条）
+    Gowin 工具链不支持非 ASCII（中文）路径。
+    请把本文件夹放在**纯英文、无空格**的路径下再编译，例如：
+        D:\fpga\piano_44964
+
+    若路径中出现中文（例如 D:\桌面\作品提交\piano_44964），编译会报：
+        ERROR (SP0002) : Corrupted project file: ...\impl\gwsynthesis\piano.prj
+    这不是工程损坏，把文件夹移到英文路径即可正常编译。
+
+
+二、编译
+    方式一（图形界面）：
+        用 Gowin EDA 打开 piano.gprj
+        确认 Top Module = top
+        点 Run All
+
+    方式二（命令行）：
+        "C:\Gowin\Gowin_V1.9.12_x64\IDE\bin\gw_sh.exe" _build.tcl
+
+    注意：本设计 CLS 占用约 97%，_build.tcl 里已设置
+        set_option -place_option 2
+        set_option -route_option 2
+    若改用默认布局策略，可能出现：
+        ERROR (PR0004) : There are total NNNN unrouted nets
+
+
+三、烧录（可直接用，不必自己编译）
+    已随包提供预编译比特流：impl/pnr/piano.fs
+
+        programmer_cli.exe -d GW2AR-18C -r 9 --fsFile impl/pnr/piano.fs --frequency 15MHz
+
+    -r 9  写入外部 Flash，掉电保持（脱机演奏演示需要）
+    -r 2  只写 SRAM，断电即丢失
+
+    烧写 Flash 不会复位 FPGA，需**断电重上电**后新配置才运行。
+
+
+四、两个不能删的文件
+    tbl/wave_tbl.mi        波表数据，wave_rom.v 用 $readmemh 载入，缺失会综合失败
+    impl/pnr/device.cfg    SSPI 引脚复用设置（set SSPI regular_io = true），
+                           缺失后 I2S 的 54/55/56 脚无法布线，报 PR2017
+
+
+五、上位机
+    upper\启动上位机.bat   双击运行（PowerShell 脚本）
+    串口 115200 8N1；若提示端口被占用，请关闭其他串口工具后重试
+
+
+六、工程概要（供参考）
+    器件        GW2AR-18C（Sipeed Tang Nano 20K）
+    音频采样率  93 750 Hz（I2S 位时钟 3 MHz ÷ 32 位/帧）
+    复音数      32 声部（物理并行，32 个 MULT18X18）
+    资源        Logic 19011/20736（92%）、CLS 10034/10368（97%）、
+                BSRAM 46/46、DSP 19/24

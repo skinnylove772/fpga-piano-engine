@@ -1,0 +1,886 @@
+[
+ {
+  "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/osd_icons.v",
+  "InstLine" : 2,
+  "InstName" : "osd_icons",
+  "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/osd_icons.v",
+  "ModuleLine" : 2,
+  "ModuleName" : "osd_icons"
+ },
+ {
+  "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/osd_rowicons.v",
+  "InstLine" : 2,
+  "InstName" : "osd_rowicons",
+  "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/osd_rowicons.v",
+  "ModuleLine" : 2,
+  "ModuleName" : "osd_rowicons"
+ },
+ {
+  "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/rotary_menu.v",
+  "InstLine" : 7,
+  "InstName" : "rotary_menu",
+  "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/rotary_menu.v",
+  "ModuleLine" : 7,
+  "ModuleName" : "rotary_menu"
+ },
+ {
+  "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/rec_ram.v",
+  "InstLine" : 2,
+  "InstName" : "rec_ram",
+  "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/rec_ram.v",
+  "ModuleLine" : 2,
+  "ModuleName" : "rec_ram"
+ },
+ {
+  "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/top.v",
+  "InstLine" : 8,
+  "InstName" : "top",
+  "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/top.v",
+  "ModuleLine" : 8,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/top.v",
+    "InstLine" : 48,
+    "InstName" : "pll_27m_6m",
+    "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/gowin_rpll/gowin_rpll.v",
+    "ModuleLine" : 6,
+    "ModuleName" : "Gowin_rPLL"
+   },
+   {
+    "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/top.v",
+    "InstLine" : 285,
+    "InstName" : "u_spec",
+    "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/spectrum.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "spectrum"
+   },
+   {
+    "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/top.v",
+    "InstLine" : 913,
+    "InstName" : "u_synth",
+    "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "synth_engine",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 47,
+      "InstName" : "u_note_step",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/note_step.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "note_step"
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 194,
+      "InstName" : "u_wave_rom",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/wave_rom.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "wave_rom"
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[0].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[1].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[2].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[3].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[4].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[5].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[6].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[7].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[8].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[9].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[10].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[11].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[12].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[13].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[14].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[15].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[16].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[17].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[18].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[19].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[20].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[21].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[22].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[23].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[24].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[25].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[26].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[27].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[28].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[29].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[30].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/synth_engine.v",
+      "InstLine" : 227,
+      "InstName" : "g_voice[31].u_voice",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "voice",
+      "SubInsts" : [
+       {
+        "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/voice.v",
+        "InstLine" : 90,
+        "InstName" : "u_env",
+        "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/adsr_env.v",
+        "ModuleLine" : 5,
+        "ModuleName" : "adsr_env"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/top.v",
+    "InstLine" : 956,
+    "InstName" : "u_fxdec",
+    "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/fx_decim.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "fx_decim"
+   },
+   {
+    "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/top.v",
+    "InstLine" : 966,
+    "InstName" : "u_delay",
+    "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/delay_fx.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "delay_fx"
+   },
+   {
+    "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/top.v",
+    "InstLine" : 977,
+    "InstName" : "u_reverb",
+    "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/reverb_fx.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "reverb_fx"
+   },
+   {
+    "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/top.v",
+    "InstLine" : 988,
+    "InstName" : "u_chorus",
+    "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/chorus.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "chorus"
+   },
+   {
+    "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/top.v",
+    "InstLine" : 1001,
+    "InstName" : "u_audio_drive_0",
+    "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/audio_drive.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "audio_drive"
+   },
+   {
+    "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/top.v",
+    "InstLine" : 1019,
+    "InstName" : "u_uart_rx",
+    "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/uart_rx_off.v",
+    "ModuleLine" : 4,
+    "ModuleName" : "uart_rx_off"
+   },
+   {
+    "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/top.v",
+    "InstLine" : 1082,
+    "InstName" : "u_uart_tx",
+    "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/uart_tx_off.v",
+    "ModuleLine" : 4,
+    "ModuleName" : "uart_tx_off"
+   },
+   {
+    "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/top.v",
+    "InstLine" : 1093,
+    "InstName" : "u_uart_cmd",
+    "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/uart_cmd.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "uart_cmd"
+   },
+   {
+    "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/top.v",
+    "InstLine" : 1180,
+    "InstName" : "u_video_pll",
+    "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/gowin_vpll/video_pll.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "video_pll"
+   },
+   {
+    "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/top.v",
+    "InstLine" : 1185,
+    "InstName" : "u_vga_timing",
+    "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/vga_timing.v",
+    "ModuleLine" : 6,
+    "ModuleName" : "vga_timing"
+   },
+   {
+    "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/top.v",
+    "InstLine" : 1223,
+    "InstName" : "u_menu",
+    "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/menu_fsm.v",
+    "ModuleLine" : 8,
+    "ModuleName" : "menu_fsm"
+   },
+   {
+    "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/top.v",
+    "InstLine" : 1267,
+    "InstName" : "u_osd",
+    "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/osd_status.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "osd_status",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/osd_status.v",
+      "InstLine" : 149,
+      "InstName" : "u_lbl",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/osd_labels.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "osd_labels"
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/osd_status.v",
+      "InstLine" : 157,
+      "InstName" : "u_nn",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/note_name.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "note_name"
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/osd_status.v",
+      "InstLine" : 320,
+      "InstName" : "u_ovl",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/osd_overlay.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "osd_overlay"
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/osd_status.v",
+      "InstLine" : 420,
+      "InstName" : "u_font",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/font5x7.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "font5x7"
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/osd_status.v",
+      "InstLine" : 500,
+      "InstName" : "u_lis",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/lissajous.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "lissajous"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/top.v",
+    "InstLine" : 1376,
+    "InstName" : "u_paj",
+    "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/paj7620.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "paj7620",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/paj7620.v",
+      "InstLine" : 186,
+      "InstName" : "u_i2c",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/i2c_master.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "i2c_master"
+     },
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/paj7620.v",
+      "InstLine" : 215,
+      "InstName" : "u_cfg",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/paj7620.v",
+      "ModuleLine" : 479,
+      "ModuleName" : "paj7620_cfg"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/top.v",
+    "InstLine" : 1401,
+    "InstName" : "u_vib",
+    "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/lfo_vib.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "lfo_vib"
+   },
+   {
+    "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/top.v",
+    "InstLine" : 1411,
+    "InstName" : "u_ws2812",
+    "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/ws2812_led.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "ws2812_led",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/ws2812_led.v",
+      "InstLine" : 507,
+      "InstName" : "u_drv",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/ws2812_drv.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "ws2812_drv"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/top.v",
+    "InstLine" : 1485,
+    "InstName" : "u_enc",
+    "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/rotary_enc.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "rotary_enc"
+   },
+   {
+    "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/top.v",
+    "InstLine" : 1501,
+    "InstName" : "u_scr",
+    "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/score_ram.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "score_ram"
+   },
+   {
+    "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/top.v",
+    "InstLine" : 1513,
+    "InstName" : "u_score",
+    "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/score_player.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "score_player",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/score_player.v",
+      "InstLine" : 84,
+      "InstName" : "u_rom",
+      "ModuleFile" : "D:/Desktop/TangNano-20K-example-main/piano_submission/src/score_rom.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "score_rom"
+     }
+    ]
+   }
+  ]
+ }
+]

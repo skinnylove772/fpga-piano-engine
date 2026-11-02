@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW2AR-18C" package="QFN88" speed="8" partNumber="GW2AR-LV18QN88C8/I7"/>
+    <FileList>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\adsr_env.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\audio_drive.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\chorus.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\delay_fx.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\fx_decim.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\reverb_fx.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\font5x7.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\gowin_rpll\gowin_rpll.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\gowin_vpll\video_pll.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\i2c_master.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\lfo_vib.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\lissajous.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\note_name.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\menu_fsm.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\note_step.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\osd_icons.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\osd_labels.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\osd_overlay.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\osd_rowicons.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\osd_status.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\paj7620.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\spectrum.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\uart_rx_off.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\uart_tx_off.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\uart_cmd.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\score_rom.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\score_ram.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\rotary_enc.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\rotary_menu.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\rec_ram.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\score_player.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\synth_engine.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\top.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\vga_timing.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\voice.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\wave_rom.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\ws2812_drv.v" type="verilog"/>
+        <File path="D:\Desktop\TangNano-20K-example-main\piano_submission\src\ws2812_led.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="global_freq" value="100.000"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="D:\Desktop\TangNano-20K-example-main\piano_submission\impl\gwsynthesis\piano.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="0"/>
+        <Option type="top_module" value="top"/>
+        <Option type="vcc" value="1.0"/>
+        <Option type="verilog_language" value="verilog-2001"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>

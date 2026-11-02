@@ -1,0 +1,49 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW2AR-18C" pn="GW2AR-LV18QN88C8/I7">gw2ar18c-000</Device>
+    <FileList>
+        <File path="src/adsr_env.v" type="file.verilog" enable="1"/>
+        <File path="src/audio_drive.v" type="file.verilog" enable="1"/>
+        <File path="src/chorus.v" type="file.verilog" enable="1"/>
+  <File path="src/delay_fx.v" type="file.verilog" enable="1"/>
+
+  <File path="src/fx_decim.v" type="file.verilog" enable="1"/>
+  <File path="src/reverb_fx.v" type="file.verilog" enable="1"/>
+        <File path="src/font5x7.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_rpll/gowin_rpll.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_vpll/video_pll.v" type="file.verilog" enable="1"/>
+        <File path="src/i2c_master.v" type="file.verilog" enable="1"/>
+        <File path="src/lfo_vib.v" type="file.verilog" enable="1"/>
+        <File path="src/lissajous.v" type="file.verilog" enable="1"/>
+        <File path="src/note_name.v" type="file.verilog" enable="1"/>
+    <File path="src/menu_fsm.v" type="file.verilog" enable="1"/>
+        <File path="src/note_step.v" type="file.verilog" enable="1"/>
+        <File path="src/osd_icons.v" type="file.verilog" enable="1"/>
+        <File path="src/osd_labels.v" type="file.verilog" enable="1"/>
+        <File path="src/osd_overlay.v" type="file.verilog" enable="1"/>
+        <File path="src/osd_rowicons.v" type="file.verilog" enable="1"/>
+        <File path="src/osd_status.v" type="file.verilog" enable="1"/>
+        <File path="src/paj7620.v" type="file.verilog" enable="1"/>
+        <File path="src/spectrum.v" type="file.verilog" enable="1"/>
+        <File path="src/uart_rx_off.v" type="file.verilog" enable="1"/>
+        <File path="src/uart_tx_off.v" type="file.verilog" enable="1"/>
+        <File path="src/uart_cmd.v" type="file.verilog" enable="1"/>
+        <File path="src/score_rom.v" type="file.verilog" enable="1"/>
+      <File path="src/score_ram.v" type="file.verilog" enable="1"/>
+      <File path="src/rotary_enc.v" type="file.verilog" enable="1"/>
+      <File path="src/rotary_menu.v" type="file.verilog" enable="1"/>
+      <File path="src/rec_ram.v" type="file.verilog" enable="1"/>
+  <File path="src/score_player.v" type="file.verilog" enable="1"/>
+  <File path="src/synth_engine.v" type="file.verilog" enable="1"/>
+        <File path="src/top.v" type="file.verilog" enable="1"/>
+        <File path="src/vga_timing.v" type="file.verilog" enable="1"/>
+        <File path="src/voice.v" type="file.verilog" enable="1"/>
+        <File path="src/wave_rom.v" type="file.verilog" enable="1"/>
+        <File path="src/ws2812_drv.v" type="file.verilog" enable="1"/>
+        <File path="src/ws2812_led.v" type="file.verilog" enable="1"/>
+        <File path="src/piano.cst" type="file.cst" enable="1"/>
+    </FileList>
+</Project>
