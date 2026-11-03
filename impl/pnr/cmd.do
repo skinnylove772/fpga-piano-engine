@@ -1,8 +1,8 @@
--d D:\Desktop\TangNano-20K-example-main\piano_submission\impl\gwsynthesis\piano.vg
+-d D:\Desktop\TangNano-20K-example-main\piano_git\impl\gwsynthesis\piano.vg
 -p GW2AR-18C-QFN88-8
 -pn GW2AR-LV18QN88C8/I7
--cst D:\Desktop\TangNano-20K-example-main\piano_submission\src\piano.cst
--cfg D:\Desktop\TangNano-20K-example-main\piano_submission\impl\pnr\device.cfg
+-cst D:\Desktop\TangNano-20K-example-main\piano_git\src\piano.cst
+-cfg D:\Desktop\TangNano-20K-example-main\piano_git\impl\pnr\device.cfg
 -bit
 -tr
 -ph

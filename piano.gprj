@@ -35,7 +35,6 @@
       <File path="src/score_ram.v" type="file.verilog" enable="1"/>
       <File path="src/rotary_enc.v" type="file.verilog" enable="1"/>
       <File path="src/rotary_menu.v" type="file.verilog" enable="1"/>
-      <File path="src/rec_ram.v" type="file.verilog" enable="1"/>
   <File path="src/score_player.v" type="file.verilog" enable="1"/>
   <File path="src/synth_engine.v" type="file.verilog" enable="1"/>
         <File path="src/top.v" type="file.verilog" enable="1"/>

@@ -44,7 +44,7 @@
 
 ### 可视化
 
-- **480×272 RGB 液晶**，6 个页面（HOME / MAIN / GRAPH / PARAM / MUSIC / TEST）
+- **480×272 RGB 液晶**，6 个页面（HOME / OVERVIEW / SCOPE / PARAM / SCORE / TEST）
 - **李萨如图形**：单音为圆、八度为"8"字，直接反映音程
 - **8 段音高分布柱图**
 - **WS2812 灯链 70 槽**（PCB 10 + 灯带 60，物理 80 颗）：弹奏流光、曲目指引、开机彩色铺展
@@ -52,8 +52,8 @@
 ### 智能化联动
 
 - **脱机演奏**：内置 3 首曲目编入 bitstream，掉电不丢，LED 逐音指引
-- **在线曲谱下载**：上位机 31 首曲库 → 串口下载至 2047 音 RAM
-- **演奏录音回传**：记录「音高 + 力度 + 毫秒时间戳」事件流，PC 端导出 CSV 或重新合成 WAV
+- **在线曲谱下载**：上位机内置 37 首试听曲 + 在线曲库 357 首 → 串口下载至 2048 字节曲谱 RAM（单曲上限 480 音）
+- **演奏录音回传**：记录「音高 + 力度 + 毫秒时间戳」事件流（5 字节/事件，板上缓冲 1 KB ≈ 204 条），PC 端导出 CSV 或重新合成 WAV
 
 ---
 
@@ -77,8 +77,7 @@ src/
   paj7620.v / i2c_master.v 手势传感器
   rotary_enc.v / menu_fsm.v / rotary_menu.v          编码器与菜单
   score_rom.v / score_ram.v / score_player.v         曲谱与播放/指引
-  rec_ram.v                演奏录音缓冲
-  uart_cmd.v / uart_rx_off.v / uart_tx_off.v         上位机串口协议
+    uart_cmd.v / uart_rx_off.v / uart_tx_off.v         上位机串口协议
   ws2812_drv.v / ws2812_led.v                        LED 灯链
   osd_*.v / font5x7.v / vga_timing.v                 屏幕显示
   gowin_rpll/ gowin_vpll/                            PLL
@@ -182,7 +181,7 @@ programmer_cli.exe -d GW2AR-18C -r 9 --fsFile impl/pnr/piano.fs --frequency 15MH
 | 延迟 ≤ 5 ms 无抖动 | **≈ 68 µs**，抖动 ≤ 1 个采样周期 |
 | 视听反馈 | LED 演奏指引 ✅ 李萨如图形 ✅ 实时频谱 ✅ |
 | 脱机 LED 曲目指引 | ✅ 内置 3 首，掉电保持 |
-| 在线曲谱下载 | ✅ 上位机 31 首 → 2047 音 |
+| 在线曲谱下载 | ✅ 内置 37 首 + 在线曲库 357 首 → 曲谱 RAM 2048 字节（单曲上限 480 音）|
 | 键位自定义 | ✅ 10 槽 |
 | 演奏录音回传 | ✅ 事件流 + CSV / WAV |
 | 蓝牙 / 手机 App | 未实现（赛题为"可搭载"选项） |
