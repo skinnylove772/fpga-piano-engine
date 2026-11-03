@@ -1,0 +1,12 @@
+﻿# 编译中间产物（可由 _build.tcl 重新生成）
+impl/temp/
+impl/gwsynthesis/*.log
+impl/gwsynthesis/*.html
+impl/gwsynthesis/*.vg
+impl/pnr/*.html
+impl/pnr/piano.tr*
+impl/pnr/piano.db
+impl/pnr/cmd.do
+impl/pnr/piano.bin
+impl/pnr/piano.binx
+*.v.bak*
